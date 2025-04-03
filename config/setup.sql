@@ -1,0 +1,12 @@
+CREATE DATABASE TestDB
+       GO
+
+USE TestDB
+       GO
+
+CREATE LOGIN TestUser
+	WITH PASSWORD = 'TestPassword'
+
+CREATE USER TestUser
+	FOR LOGIN TestUser
+	WITH DEFAULT_SCHEMA = dbo
